@@ -1,0 +1,203 @@
+<html>
+    <head>
+    <script>
+        function Max(){
+            var borda = document.getElementById("corpo");
+             borda.classList.toggle('bordamax');
+        }
+
+        function f(value){
+            var borda = document.getElementById("corpo");
+            if(value == 1){
+                borda.style.display = "none";
+            }
+            if(value == 2)
+                window.alert("Este Botao não é Funcional");
+        }
+          
+        function PopUp(valor){
+            var PopCanion = document.getElementById("PopCanion");
+                var Canion = document.getElementById("Canion");
+
+            var PopSanta = document.getElementById("PopSanta");
+                var Santa = document.getElementById("Santa");
+            
+
+            var PopPascoa = document.getElementById("PopPascoa");
+                var Pascoa = document.getElementById("Pascoa");
+
+            if( valor == 1){
+                Pascoa.onclick = function Mostra(){
+                    PopPascoa.style.display= "block";
+                    }
+
+            }
+            if( valor == 2){
+                Santa.onclick = function Mostra(){
+                    PopSanta.style.display= "block";
+                    }
+
+            }
+            if( valor == 3){
+                Canion.onclick = function Mostra(){
+                    PopCanion.style.display= "block";
+                    }
+
+            }
+
+        }
+        
+        function PopUpClose(){
+                PopPascoa.style.display = "none";
+                PopSanta.style.display = "none";
+                PopCanion.style.display = "none";
+        }
+        
+    </script>    
+        <link rel="stylesheet" href="umlugar.css">
+        <meta charset="utf-8">
+        <title>Um Lugar Especial</title>
+    </head>
+    <body>
+
+        <div id="corpo" class="borda" class="center">
+           
+            <div class="cabecalho">
+
+                <b id="oposto">Um lugar Especial</b>
+                <div class="flex">
+                    
+                    <div><input type="button" onclick=f(2) value="_" class="quadrado"></input></div>
+                    <div><input type="button" onclick=Max() class="quadrado" value="▀"></input></div>
+                    <div><input type="button" onclick=f(1) class="x" value="X"></input></div>
+                </div>
+            </div> 
+                <div >
+                    <img class=center src="../img/chile.gif">
+                        <div  class="coluna">
+                        
+                            <div>
+                                <div class="popup" id="PopPascoa" id="corpopop">
+                                    <div class="cabecalhopop">
+                                        <div class="flex" >
+                                            <b id="oposto">Mais Informações</b>
+                                        </div>
+                                        <div class="flex">
+                                            <div><input type="button" onclick=f(2) value="_" class="quadrado"></input></div>
+                                            <div><input  type="button" onclick=f(2) class="quadrado" value="▀"></input></div>
+                                        <div><input type="button" onclick=PopUpClose() class="x" value="X" ></input></div>
+                                        </div>
+                                    </div>
+
+                                        <div class="popup-conteudo">
+                                            <img src="../img/Ilha-de-Pascoa-Rapa-Nui.webp" class="center2">
+                                            <div class="centerletring"><h3>Ilha de Pascoa</h3></div>
+                                        </div>
+                                        <div class="textopop">
+                                            <p>Na época da pré-história humana, até 1200 a.C., a expansão polinésia é contada como uma das explorações marítimas mais dramáticas. Povos vindos do continente asiático – agricultores, navegadores, aparentemente originários do arquipélago de Bismark, a nordeste da Nova Guiné, atravessaram quase dois mil quilómetros de mar aberto, a bordo de canoas, para atingir as ilhas da Polinésia Ocidental de Fiji, Samoa e Tonga. Os polinésios, apesar da ausência de bússola, instrumentos de metal e escrita, eram mestres da arte da navegação e da tecnologia de canoas à vela. Os seus ancestrais produziam uma cerâmica conhecida como estilo lapita.
+
+                                                <br><br>Alguns historiadores acreditavam que as ilhas polinésias foram descobertas por acaso. Hoje, porém, há fortes indícios de que, tanto as descobertas como a colonização foram planeadas por viajantes que, numa incursão predeterminada, navegavam rumo ao desconhecido. A rota mais provável para a colonização da Ilha De Páscoa deve ter sido a partir das ilhas de Mangareva, Pitcairn e Henderson, as duas últimas funcionando como trampolins visto que uma viagem directa de Mangareva à Páscoa dura cerca de dezessete dias, principalmente transportando produtos essenciais para a sobrevivência da colónia. A transferência de muitas espécies de plantas e animais – de taro a bananas e de porcos a cães e galinhas, não deixa dúvidas sobre o planeamento da ocupação da Ilha De Páscoa pelos seus colonizadores.</p>
+                                        </div>
+                                        <div class="divmapa">
+                                            <h3>Localização no Globo</h3>
+                                            <br>
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113630.98419763986!2d-109.40885534559567!3d-27.1258097917176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9947f017a8d4ae2b%3A0xbbe5b3edc02a2db6!2sIlha%20de%20P%C3%A1scoa!5e0!3m2!1spt-BR!2sbr!4v1679201535045!5m2!1spt-BR!2sbr" class="mapa"></iframe>
+
+                                        </div>
+
+                                        
+                                </div>
+
+                                <div>
+                                    <div class="popup" id="PopSanta" id="corpopop">
+                                        <div class="cabecalhopop">
+                                            <div class="flex" >
+                                                <b id="oposto">Mais Informações</b>
+                                            </div>
+                                            <div class="flex">
+                                                <div><input type="button" onclick=f(2) value="_" class="quadrado"></input></div>
+                                                <div><input  type="button" onclick=f(2) class="quadrado" value="▀"></input></div>
+                                            <div><input type="button" onclick=PopUpClose() class="x" value="X" ></input></div>
+                                            </div>
+                                        </div>
+    
+                                            <div class="popup-conteudo">
+                                                <img src="../img/Santa_Lucia.jpg" class="center2">
+                                                <div class="centerletring2"><h3>Cerro Santa Lucia</h3></div>
+                                            </div>
+                                            <div class="textopop">
+                                                <p>Cerro Santa Lucía é um monte situado no centro de Santiago de Chile. Delimitado a sul pela Avenida Libertador General Bernardo O'Higgins (onde se situa a Estação Santa Lucía do Metro de Santiago), a oeste da Rua Santa Lucia, ao norte da Rua Merced e a leste da rua Victoria Subercaseaux. Está a uma altitude de 629 metros acima do nível do mar e uma altura de 69 metros, com uma área de 65.300 m².<br><br>
+
+                                                    A modernização e urbanização da área aconteceu em 1872 e 1874, quando foi intendente da cidade Benjamín Vicuña Mackenna.</p>
+                                            </div>
+                                            <div class="divmapa">
+                                                <h3>Localização no Globo</h3>
+                                                <br>
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13317.388906077176!2d-70.6520880707985!3d-33.44025908675693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c59f3b42ac29%3A0x9f9c852a64743e83!2sCerro%20Santa%20Luc%C3%ADa!5e0!3m2!1spt-BR!2sbr!4v1679201940128!5m2!1spt-BR!2sbr" class="mapa"></iframe>
+    
+                                            </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div>
+                                    <div class="popup" id="PopCanion" id="corpopop">
+                                        <div class="cabecalhopop">
+                                            <div class="flex" >
+                                                <b id="oposto">Mais Informações</b>
+                                            </div>
+                                            <div class="flex">
+                                                <div><input type="button" onclick=f(2) value="_" class="quadrado"></input></div>
+                                                <div><input  type="button" onclick=f(2) class="quadrado" value="▀"></input></div>
+                                                <div><input type="button" onclick=PopUpClose() class="x" value="X" ></input></div>
+                                            </div>
+                                        </div>
+    
+                                            <div class="popup-conteudo">
+                                                <img src="../img/canion.jpg" class="center2">
+                                                <div class="centerletring2"><h3>Cajón del Maipo</h3></div>
+                                            </div>
+                                            <div class="textopop">
+                                                <p>Cajón del Maipo é um cânion localizado na porção sudeste andina da Região Metropolitana de Santiago , 
+                                                    Chile . Abrange a bacia do alto rio Maipo , onde o rio se entrincheira em um vale estreito.
+                                                    <br> A zona apresenta uma série de rios confluentes, como o rio El Volcán , o rio Yeso e o rio Colorado , bem como outros riachos menores, incluindo San Gabriel, Manzanito, Coyanco, El Sauce, El Manzano e San José. A localidade principal é San José de Maipo, a capital da comuna que inclui todo o setor andino da Região Metropolitana. O vale termina perto de Pirque e começa quase na fronteira com a Argentina , onde é cercado por alguns dos picos mais altos da região, incluindo San José , Maipo e Marmolejo , a montanha mais ao sul com mais de 6.000 metros (20.000 pés). no mundo. 
+                                                    Várias das montanhas são vulcões ativos; San Jose foi o mais recente a entrar em erupção, em 1960.</p>
+                                            </div>
+                                            <div class="divmapa">
+                                                <h3>Localização no Globo</h3>
+                                                <br>
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6682873.623395914!2d-71.75709954775488!3d-35.128631760470746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967cd5c46b577c0d%3A0xd879db0321c2d8c1!2sMaipo%20Canyon!5e0!3m2!1spt-BR!2sbr!4v1679201859291!5m2!1spt-BR!2sbr" class="mapa"></iframe>
+    
+                                            </div>
+                                            
+                                    </div>
+                                </div>
+
+                             </div>
+                        
+
+                </div>
+                <div class="centerletring" ><h2 >CHILE</h2></div>
+                     
+                    
+                <div>
+                    <p> Trata-se do 37º maior país do mundo em área territorial e o décimo maior da América,
+                        com uma área total de 756 950 quilômetros quadrados (km²), incluindo 12 290 km² de água.
+                        Seu território abrange três fusos horários, sendo UTC−3 em Magalhães e Antártica Chilena;
+                        UTC−4 no restante do país continental - sendo que este é tido como seu fuso horário padrão - e UTC-5 na província da Ilha de Páscoa e na ilha de Sala y Gómez,
+                        ambas no Oceano Pacífico.</p>
+                </div>
+                <div class="flex2">
+                    <div>
+                    <h3>Motivos Para se Ir</h3>
+                    <ol>
+                        <li><input class= "botao" class="motivos" onclick="PopUp(1)" type="button" value="Ilha de Páscoa" id="Pascoa"></li>
+                        <li><input class= "botao" class="motivos" onclick="PopUp(2)" type="button" value="Cerro Santa Lucia" id="Santa"></li>
+                        <li><input class= "botao" class="motivos" onclick="PopUp(3)" type="button" value="Cajón del Maipo" id="Canion"></li>
+                    </ol>
+                    </div>
+                    
+                </div>
+
+    </body>
+</html>

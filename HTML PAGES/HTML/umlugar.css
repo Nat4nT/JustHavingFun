@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{background-color:rgb(212, 208, 200);}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(45deg ,#1b3478,#9ab9da); 
+    border-bottom:3.8px groove lightyellow;
+    color: white;
+  
+    
+
+}
+.cabecalhopop{
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(45deg ,#1b3478,#9ab9da); 
+    border-bottom:0px groove lightyellow;
+    color: white;
+    position: fixed;
+    width: 48.6%;
+}
+.borda{
+    border-color: darkgray;
+    box-shadow: 8px 8px 8px 8px gray;
+    border:3.8px groove ;
+    display: block;
+    margin: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 82%;
+    min-height: 95vh;
+    display: block;
+
+}
+
+.bordamax{
+    border-color: darkgray;
+    box-shadow: 8px 8px 8px 8px gray;
+    border:3.8px groove ;
+    display: block;
+    margin: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    min-height: 95vh;
+    display: block;
+
+}
+
+table{
+    margin: auto; 
+    padding: auto; 
+}
+
+
+.center{
+    display: block;
+    margin: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17%;
+}
+.center2{
+    display: block;
+    margin: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+
+
+.centerletring{
+    
+    display: block;
+    margin: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.centerletring2{
+    
+    display: block;
+    margin: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    white-space: nowrap;
+    
+}
+
+h2{
+    font-weight: 600;
+    letter-spacing: 15px;
+    margin:auto;
+    font-family:serif;
+    margin-left: 20%;
+    margin-right:20%;
+}
+
+.quadrado{padding: 1px;}
+.quadrado:hover{ background-color:rgb(179, 175, 169) ;}
+
+.flex{
+    display: flex;
+    gap: 2px;
+    margin-right: 4px;
+    justify-content: flex-end;
+}
+.flex2{
+    display: flex;
+    white-space: nowrap;
+    justify-content:space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    row-gap: 50%;
+}
+
+
+#oposto{
+    display: flex;
+    margin-left: 6px;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    background-color:rgb(212, 208, 200) ;
+    box-shadow: 1px  rgba(0, 0, 0, 0.61);
+    border:groove 1.2px ;
+    margin: 2px;
+    font-family: serif;
+    font-size: 10px;
+    padding: 1px;
+
+}
+.x{
+    background:radial-gradient(rgb(241, 194, 194), rgb(206, 2, 53)); 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:600;
+}
+
+.x:hover{background: rgb(238, 10, 10);}
+
+p{
+    font-weight: 600;
+    text-align: center;
+    text-indent: 2%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 2% 2% 1% 2%;
+    color:#373737;   
+}
+h3{margin-left: 8%;margin-top: 2%; font-size: 17px;}
+
+ol{
+    margin-top: 1%;
+    margin-left: 12%;
+    
+}
+
+
+.botao{
+    padding:2px;
+    border: 2.9px groove;
+    background-color:rgb(212, 208, 200) ;
+    box-shadow: 1px 2px 2px gray;
+    font-size: 15px;
+}
+
+.motivos{
+    padding: 7px;
+}
+.botao:hover{background-color:rgb(116, 114, 112)}s
+.botao:active{border:1px groove}
+
+.popup{
+    display: none;
+    position:absolute;
+    width: 50%; ;
+    height: auto;
+    max-height: 50%;
+    border: 1px solid black;
+    background-color: rgb(212, 208, 200);
+    box-shadow: 1px 2px 2px gray;
+    overflow-y: auto;
+
+}
+
+
+
+.popup-conteudo{
+    background-color:rgb(212, 208, 200);
+    width: 100%;
+    height: 100%;
+}
+
+.divmapa{  margin: 3px 2px 3px 2px;
+}
+.mapa{
+    border:4px groove rgb(212,208,200);
+    margin-left: 30%;
+    margin-right: auto;
+    width: 300px;
+    height: 200px;
+}
+
+content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+.textpop{
+   
+    margin-left: 8%;
+    margin-top: 2%;
+    font-size: 17px;
+}
